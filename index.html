@@ -2,200 +2,87 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shamrat Neero | Portfolio</title>
-
-  <!-- Fonts & Icons -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f4ee">
+  <meta name="description" content="Shamrat Neero — computer science graduate researching trustworthy medical AI, neuroimaging, and multimodal learning. Explore publications, research, and engineering projects.">
+  <meta property="og:title" content="Shamrat Neero — Trustworthy Medical AI & Research Engineering">
+  <meta property="og:description" content="Research in chest X-ray triage, MRI–genetics fusion, and deployment-aware evaluation, supported by full-stack engineering.">
+  <meta property="og:type" content="website">
+  <title>Shamrat Neero | Medical AI & Research Engineering</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🎬</text></svg>">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
-  <!-- NAV -->
-  <nav>
-    <div class="left"><a href="/" aria-label="Home">Shamrat Neero</a></div>
-    <div class="right">
-      <a href="#skills"><i class="fa-solid fa-code"></i><span>Skills</span></a>
-      <a href="#projects"><i class="fa-solid fa-briefcase"></i><span>Projects</span></a>
-      <a href="#education"><i class="fa-solid fa-book"></i><span>Education</span></a>
-      <a href="#contact"><i class="fa-solid fa-envelope"></i><span>Contact</span></a>
-      <a href="https://www.bracu.ac.bd" target="_blank"><i class="fa-solid fa-graduation-cap"></i><span>BRAC University</span></a>
-      <a href="https://discord.gg/F62d7pfz" target="_blank"><i class="fa-brands fa-discord"></i><span>CSE 391 Discord</span></a>
-      <a href="https://github.com/shamratneero" target="_blank"><i class="fa-brands fa-github"></i><span>GitHub</span></a>
-      <a href="https://bd.linkedin.com/in/shamratneero" target="_blank"><i class="fa-brands fa-linkedin"></i><span>LinkedIn</span></a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="wordmark" href="#home" aria-label="Shamrat Neero home">sn<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-controls="navigation" aria-expanded="false">Menu <span aria-hidden="true">☰</span></button>
+      <nav id="navigation" aria-label="Main navigation">
+        <a href="#work">Selected work</a><a href="#publications">Publications</a><a href="#research">Research</a><a href="#background">Background</a><a class="nav-contact" href="#contact">Let’s connect <span aria-hidden="true">↗</span></a>
+      </nav>
     </div>
-  </nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> SHAMRAT NEERO / MEDICAL AI & RESEARCH ENGINEERING</p>
+        <h1 id="hero-title">Building AI.<br><em>Earning trust.</em></h1>
+        <p class="hero-intro">I’m Shamrat, a computer science graduate working at the intersection of medical imaging, multimodal learning, and software engineering. I study how AI models behave beyond a single benchmark—and build tools to put that understanding into practice.</p>
+        <div class="hero-actions"><a class="button primary" href="#work">Explore my work <span aria-hidden="true">↗</span></a><a class="text-link" href="documents/Shamrat_Neero_CV.pdf" download>Download CV <span aria-hidden="true">↓</span></a></div>
+        <p class="hero-note">Medical imaging <span>·</span> Multimodal learning <span>·</span> Trustworthy AI</p>
+      </div>
+      <figure class="portrait"><img src="images/shamrat-neero.jpg" alt="Shamrat Neero" width="1200" height="900" fetchpriority="high"><figcaption><span>Research with rigor.<br>Engineering with purpose.</span><span class="portrait-mark" aria-hidden="true">✳</span></figcaption></figure>
+      <div class="hero-bottom"><span>FROM RESEARCH QUESTIONS TO WORKING SOFTWARE</span><a href="#work">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a></div>
+    </section>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero-section" id="hero">
-      <div class="text">
-        <h2>Hi, I’m Shamrat</h2>
-        <p class="quote">“Film is emotion in motion.” — Shamrat Neero</p>
-        <p><em>আমি সম্রাট নিরো</em> — BRAC CSE. I shoot, I code, I ship. I blend <em>filmmaking</em> with <em>ML</em> and front-end to build things that feel local and useful.</p>
-        <p>Recent work: <strong>CyberGuard Chronicles</strong> — a gamified cybersecurity learning app; <strong>Bangla Sign Language Recognition</strong> — CNN + keypoints, real-time demo; and <strong>SoulSync</strong> — lyrics-aware mood music (React + Django).</p>
-        
-        <div class="hero-tags">
-          <span class="tag">🎥 Filmmaker</span>
-          <span class="tag">💻 Developer</span>
-          <span class="tag">🧠 ML Enthusiast</span>
+    <section class="work-section section-pad" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">01 / SELECTED RESEARCH & ENGINEERING</p><h2 id="work-title">Ideas, put into practice<span>.</span></h2></div><p>From external validation and model audits<br>to working research prototypes.</p></div>
+        <div class="filter-bar" role="group" aria-label="Filter projects"><button type="button" class="filter active" data-filter="all" aria-pressed="true">All work <span>08</span></button><button type="button" class="filter" data-filter="research" aria-pressed="false">Research & AI</button><button type="button" class="filter" data-filter="engineering" aria-pressed="false">Engineering</button></div>
+        <p id="filter-status" class="sr-only" role="status" aria-live="polite"></p>
+        <div class="project-grid">
+          <article class="project project-featured" data-category="research engineering">
+            <div class="project-visual medical-visual"><div class="study-graphic"><p class="eyebrow">CHEST X-RAY TRIAGE</p><div class="evaluation-stack"><span>Ranking <b>AUC</b></span><span>Localization <b>Grad-CAM</b></span><span>Calibration <b>ECE</b></span></div><p>Three evaluation lenses.<br>One deployment decision.</p><span class="graphic-caption">STUDY FRAMEWORK / SCHEMATIC</span></div></div>
+            <div class="project-body"><div class="project-meta"><span>01 / MEDICAL AI</span><span>2026 · MICAD ACCEPTED</span></div><h3>A high AUC is only<br>part of the story.</h3><p>A solo-authored chest X-ray triage study evaluating four deep learning models on 112K+ NIH ChestX-ray14 images, with external validation on VinDr-CXR.</p><div class="result-note">Examining disagreement between ranking, localization, and calibration.</div><div class="tags"><span>PyTorch</span><span>DenseNet-121</span><span>ConvNeXt-Tiny</span><span>FastAPI</span></div><details><summary>Read the study overview <span aria-hidden="true">↗</span></summary><div class="case-study"><h4>Evaluation</h4><p>Compared ranking performance, localization, and calibration to assess whether apparent model quality translates into useful behavior for resource-constrained triage.</p><h4>Reported findings</h4><p>Cardiomegaly localization IoU reached up to 0.47. Per-class isotonic calibration yielded approximately 40-fold lower expected calibration error than global temperature scaling in the study’s evaluation.</p><h4>Engineering</h4><p>Built a FastAPI and Streamlit triage prototype and profiled CPU/GPU latency and memory. The prototype supports deployment-aware evaluation in resource-constrained settings.</p><h4>Status</h4><p>Accepted at MICAD 2026. See the publication entry below for the full title.</p></div></details></div>
+          </article>
+          <article class="project" data-category="research">
+            <div class="project-visual fusion-visual"><div class="study-graphic"><p class="eyebrow">MRI + APOE GENETICS</p><div class="fusion-flow"><span>OASIS-3<br><b>365 subjects</b></span><span aria-hidden="true">→</span><span>ADNI<br><b>1,287 participants</b></span></div><p>Does the model hold up<br>in another cohort?</p><span class="graphic-caption">CROSS-COHORT EVALUATION / SCHEMATIC</span></div></div>
+            <div class="project-body"><div class="project-meta"><span>02 / MULTIMODAL LEARNING</span><span>2026 · SUBMITTED</span></div><h3>Auditing Alzheimer’s<br>classification models.</h3><p>Evaluated clinical, imaging, and MRI–genetics fusion models using subject-level cross-validation on OASIS-3 and external evaluation on ADNI.</p><div class="result-note">External fusion AUC: 0.6330 → 0.8014 with validation Brier score checkpoint selection.</div><div class="tags"><span>PyTorch</span><span>3D CNN</span><span>OASIS-3</span><span>ADNI</span></div><details><summary>Read the study overview <span aria-hidden="true">↗</span></summary><div class="case-study"><h4>Study design</h4><p>Five-fold subject-level cross-validation on 365 OASIS-3 subjects, followed by external evaluation on 1,287 ADNI participants.</p><h4>The audit</h4><p>Investigated discrepancies between mean fold-wise and pooled out-of-fold AUC. Identified degenerate AUC-selected checkpoints and cross-fold probability incoherence.</p><h4>Reported result</h4><p>Selecting checkpoints by validation Brier score improved external fusion AUC from 0.6330 to 0.8014 in this cross-cohort evaluation.</p><h4>Status</h4><p>Manuscript submitted to Computerized Medical Imaging and Graphics (CMIG), 2026.</p></div></details></div>
+          </article>
+          <article class="project" data-category="research">
+            <div class="project-visual cohort-visual"><div class="study-graphic"><p class="eyebrow">MCI / 24-MONTH PROGRESSION</p><div class="cohort-number">1,744<span>baseline participants</span></div><div class="cohort-breakdown"><span>196 converters</span><span>829 stable MCI</span><span>719 right-censored</span></div><span class="graphic-caption">COHORT DESIGN / ANALYSIS ONGOING</span></div></div>
+            <div class="project-body"><div class="project-meta"><span>03 / LONGITUDINAL NEUROIMAGING</span><span>2026 · ONGOING</span></div><h3>Following progression.<br>Accounting for uncertainty.</h3><p>An ADNI longitudinal cohort study with explicit 24-month outcome rules, developing MRI-derived and clinical predictors of MCI progression.</p><div class="result-note">954 baseline T1 MRI studies selected for imaging processing.</div><div class="tags"><span>Structural T1 MRI</span><span>ADNI</span><span>FastSurfer</span></div><details><summary>Explore the ongoing work <span aria-hidden="true">↗</span></summary><div class="case-study"><h4>Cohort definition</h4><p>Defined 1,744 baseline MCI participants: 196 converters, 829 stable MCI, and 719 right-censored, using explicit 24-month outcome rules.</p><h4>Current scope</h4><p>Selected 954 baseline T1 MRI studies for processing and am developing MRI-derived and clinical predictor pipelines. Imaging analysis and progression modeling are ongoing; predictive results are not yet reported.</p></div></details></div>
+          </article>
+          <article class="project" data-category="research engineering">
+            <div class="project-visual sign-visual"><img src="images/bdsl.jpg" alt="Visual from the Bangla Sign Language recognition project" width="753" height="583" loading="lazy"><span class="visual-label">COMPUTER VISION / ACCESSIBILITY</span></div>
+            <div class="project-body"><div class="project-meta"><span>04 / ACCESSIBLE INTERACTION</span><span>2025 · SUBMITTED TO ICCIT</span></div><h3>Making Bangla sign language<br>machine-readable.</h3><p>ResNet18 transfer learning for BDSL-49, with 97% reported accuracy and a full-stack webcam inference application.</p><div class="tags"><span>PyTorch</span><span>OpenCV</span><span>Django</span><span>React</span></div><details><summary>Explore the project <span aria-hidden="true">↗</span></summary><div class="case-study"><h4>Research & implementation</h4><p>Used ResNet18 transfer learning for Bangla sign language recognition and built a Django and React application for webcam inference. Reported 97% accuracy on BDSL-49.</p><h4>Status</h4><p>Manuscript submitted to ICCIT.</p></div></details></div>
+          </article>
+          <article class="project" data-category="research engineering">
+            <div class="project-visual game-visual"><img src="images/cyberguard.jpg" alt="CyberGuard Chronicles cybersecurity learning project" width="652" height="664" loading="lazy"><span class="visual-label">UNDERGRADUATE THESIS / HCI</span></div>
+            <div class="project-body"><div class="project-meta"><span>05 / GAME-BASED LEARNING</span><span>2025 · THESIS</span></div><h3>CyberGuard Chronicles</h3><p>Designed, implemented, and assessed a game-based cybersecurity-awareness platform in Bangladesh, with semi-structured interviews involving rural and urban participants.</p><div class="result-note">Undergraduate thesis GPA: 4.00.</div><div class="tags"><span>HCI</span><span>Gamification</span><span>Qualitative evaluation</span></div><details><summary>Explore the thesis <span aria-hidden="true">↗</span></summary><div class="case-study"><h4>Thesis title</h4><p>CyberGuard Chronicles: Design, Implementation, and Assessment of a Game-Based Platform for Cybersecurity Awareness in Bangladesh.</p><h4>Method</h4><p>Built a game-based intervention and evaluated it through semi-structured interviews with rural and urban participants, connecting software development with human-centered assessment.</p></div></details></div>
+          </article>
+          <article class="project compact-project" data-category="engineering"><div class="project-body"><div class="project-meta"><span>06 / AI-ASSISTED PRODUCT</span><span>MAY 2025</span></div><h3>SoulSync</h3><p>A music and meditation platform connecting lyrics-based recommendations with personalized dashboards and integrated audio playback.</p><div class="tags"><span>React</span><span>Django</span><span>PostgreSQL</span><span>OpenAI API</span></div><details><summary>Implementation details <span aria-hidden="true">↗</span></summary><div class="case-study"><p>Built authentication, dashboards, audio playback, and AI-assisted recommendations. Optimized database queries to improve the search experience.</p></div></details></div></article>
+          <article class="project compact-project" data-category="engineering"><div class="project-body"><div class="project-meta"><span>07 / FULL-STACK APPLICATION</span><span>SEP 2024</span></div><h3>A better path to adoption.</h3><p>An animal adoption service bringing adopter–shelter matching, administration, and live chat into one application.</p><div class="tags"><span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span></div><details><summary>Implementation details <span aria-hidden="true">↗</span></summary><div class="case-study"><p>Developed REST APIs for authentication, image uploads, and payments. Integrated a payment gateway supporting local and international transactions alongside matching and communication features.</p></div></details></div></article>
+          <article class="project compact-project" data-category="engineering"><div class="project-body"><div class="project-meta"><span>08 / WORKFLOW SOFTWARE</span><span>APR 2024</span></div><h3>Less admin. More creating.</h3><p>A content creator management system connecting creator–client workflows, secure payments, and email communication.</p><div class="tags"><span>PHP</span><span>SQL</span><span>Tailwind CSS</span><span>SSLCommerz</span></div><details><summary>Implementation details <span aria-hidden="true">↗</span></summary><div class="case-study"><p>Implemented authentication, SSLCommerz payment integration, and SMTP messaging to reduce manual coordination between creators and clients.</p></div></details></div></article>
         </div>
-
-        <div class="hero-actions">
-          <a href="#projects" class="btn primary">🚀 View My Work</a>
-          <a href="#contact" class="btn secondary">✉️ Get In Touch</a>
-        </div>
-      </div>
-
-      <div class="headshot">
-        <img src="images/IMG_4406.jpg" alt="Portrait of Shamrat Neero">
+        <a class="text-link github-link" href="https://github.com/shamratneero" target="_blank" rel="noopener noreferrer">More on GitHub <span aria-hidden="true">↗</span></a>
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="skills-section">
-      <h2>Skills</h2>
-      <div class="text">
-        Proficient in <strong>React.js</strong>, <strong>JavaScript</strong>, and <strong>PHP</strong>.  
-        Exploring <strong>AI</strong> and <strong>human-centered technology</strong> — where creativity meets code.
-      </div>
-      <div class="cells">
-        <div class="cell"><img src="images/html-logo.webp" alt="HTML logo"><span>HTML</span></div>
-        <div class="cell"><img src="images/css-logo.webp" alt="CSS logo"><span>CSS</span></div>
-        <div class="cell"><img src="images/javascript-logo.webp" alt="JavaScript logo"><span>JavaScript</span></div>
-        <div class="cell"><img src="images/react-logo.webp" alt="React logo"><span>React.js</span></div>
-      </div>
+    <section class="publications-section section-pad wrap" id="publications" aria-labelledby="publications-title">
+      <div class="section-heading"><div><p class="eyebrow">02 / PUBLICATIONS & MANUSCRIPTS</p><h2 id="publications-title">Research, on the record<span>.</span></h2></div><a class="text-link" href="documents/Shamrat_Neero_CV.pdf" download>Download full CV <span aria-hidden="true">↓</span></a></div>
+      <article class="publication"><div><span class="publication-status accepted">Accepted</span><span class="publication-venue">MICAD 2026</span></div><h3>AI-Assisted Chest X-Ray Triage: An Integrated Evaluation of Ranking, Localization, and Calibration for Deployment in Resource-Constrained Settings.</h3><p>Neero, S. · Solo-authored study</p></article>
+      <article class="publication"><div><span class="publication-status">Submitted</span><span class="publication-venue">Computerized Medical Imaging and Graphics · 2026</span></div><h3>Checkpoint selection by validation AUC can silently produce degenerate models in multimodal Alzheimer’s disease classification—a cross-cohort audit.</h3><p>Neero, S. · Manuscript submitted to CMIG</p></article>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="projects-section">
-      <h2>Projects</h2>
-      <p class="text">Focused, creative builds — one clear purpose each.</p>
+    <section class="research-section section-pad" id="research" aria-labelledby="research-title"><div class="wrap research-layout"><div class="research-intro"><p class="eyebrow">03 / RESEARCH DIRECTION</p><h2 id="research-title">Beyond the<br>benchmark.<br><em>Toward trust.</em></h2><p>My research asks what happens when medical AI leaves the conditions it was developed in. I focus on external validation, meaningful probability estimates, and evaluation that reflects deployment constraints.</p><a class="text-link" href="mailto:shamratneero@gmail.com?subject=Research%20collaboration">Discuss research collaboration <span aria-hidden="true">↗</span></a></div><div class="research-topics"><article><span class="topic-number">01</span><div><h3>Trustworthy medical AI</h3><p>Studying where ranking, localization, and calibration disagree—and how those differences affect the evaluation of chest X-ray triage models.</p></div></article><article><span class="topic-number">02</span><div><h3>Neuroimaging & multimodal learning</h3><p>Combining structural MRI, APOE genetics, and clinical information to investigate Alzheimer’s disease classification and longitudinal MCI progression.</p></div></article><article><span class="topic-number">03</span><div><h3>Evaluation that survives deployment</h3><p>Auditing checkpoint selection and cross-cohort generalization, using subject-level validation, and profiling inference latency and memory for constrained settings.</p></div></article></div></div></section>
 
-      <div class="projects-grid">
-        <article class="project">
-          <img src="images/cyberguard.jpg" alt="CyberGuard Chronicles screenshot">
-          <div class="body">
-            <div class="title">CyberGuard Chronicles</div>
-            <div class="meta">Gamified cybersecurity learning • Unity + Firebase</div>
-          </div>
-        </article>
+    <section class="background-section section-pad wrap" id="background" aria-labelledby="background-title"><div class="section-heading"><div><p class="eyebrow">04 / BACKGROUND & TOOLKIT</p><h2 id="background-title">A researcher’s curiosity.<br>An engineer’s approach<span>.</span></h2></div></div><div class="background-grid"><div><h3 class="column-label">EXPERIENCE & EDUCATION</h3><article class="timeline-item"><span class="timeline-dot"></span><p class="eyebrow">INDUSTRY EXPERIENCE</p><h3>Web Developer</h3><p class="organization">THiNK LABS · Internship</p><p>Contributed to the backend of COMSURE, an in-house power management device. Developed three responsive React pages and built a 2D pixel game in JavaScript.</p></article><article class="timeline-item"><span class="timeline-dot"></span><p class="eyebrow">ACADEMIC BACKGROUND</p><h3>BSc in Computer Science</h3><p class="organization">BRAC University · Bangladesh</p><p>Computer science graduate. CGPA: 3.06/4.00. Undergraduate thesis: CyberGuard Chronicles, a game-based cybersecurity-awareness platform evaluated with rural and urban participants. Thesis GPA: 4.00.</p></article></div><div class="toolkit"><h3 class="column-label">TOOLS I BUILD WITH</h3><div class="tool-row"><span>01</span><div><h4>Machine learning & evaluation</h4><p>Python · PyTorch · scikit-learn · TorchVision · OpenCV · 3D CNNs · Grad-CAM · Calibration · Subject-level cross-validation</p></div></div><div class="tool-row"><span>02</span><div><h4>Imaging & research data</h4><p>Structural MRI · DICOM · FastSurfer · dcm2niix · ADNI · OASIS-3 · NIH ChestX-ray14 · VinDr-CXR</p></div></div><div class="tool-row"><span>03</span><div><h4>Research tools & applications</h4><p>FastAPI · Streamlit · Django · React · JavaScript · PostgreSQL · SQL</p></div></div><div class="tool-row"><span>04</span><div><h4>Engineering workflow</h4><p>Docker · WSL2 · Git · CPU/GPU inference profiling · Full-stack prototyping</p></div></div></div></div></section>
 
-        <article class="project">
-          <img src="images/bdsl.jpg" alt="Bangla Sign Language recognition UI">
-          <div class="body">
-            <div class="title">Bangla Sign Language Recognition</div>
-            <div class="meta">CNN + keypoints • PyTorch • real-time demo</div>
-          </div>
-        </article>
-
-        <article class="project">
-          <img src="images/soulsync.jpg" alt="SoulSync app mockup">
-          <div class="body">
-            <div class="title">SoulSync</div>
-            <div class="meta">Lyrics-aware mood music • React + Django</div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- TESTIMONY -->
-    <section id="testimony" class="testimony-section">
-      <h2>Testimony</h2>
-      <div class="group">
-        <div class="person-details">
-          <img src="images/testimony-headshot.jpg" alt="Headshot of Ashikur Tamim">
-          <p><strong>Ashikur Tamim</strong></p>
-          <p>CEO, THiNk Labs</p>
-        </div>
-        <div class="text">“Shamrat brings filmmaking discipline to code — clear story, clean UI, and strong delivery. He learns fast, fixes calmly, and ships on time.”</div>
-      </div>
-    </section>
-
-    <!-- EDUCATION -->
-    <section id="education" class="education-section">
-      <h2>Education</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Year</th>
-            <th>Degree</th>
-            <th>Institute</th>
-            <th>Details</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>2021 – 2025</td>
-            <td rowspan="2">BSc in Computer Science</td>
-            <td>BRAC University</td>
-            <td>Specialized in AI & Human–Computer Interaction.</td>
-          </tr>
-          <tr>
-            <td>CGPA: 3.10 / 4.00</td>
-            <td colspan="2">Content Creator with 100K+ audience. Skilled in React, JavaScript, PHP, exploring AI & human-centered design.</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="contact-section">
-      <h2>Contact</h2>
-      <div class="group">
-        <div class="text">
-          If you prefer Bangla, write in Bangla. আমি বাংলাতেই রিপ্লাই করব।  
-          Also find me via <a href="https://www.bracu.ac.bd" target="_blank" rel="noopener">BRAC University</a> or the
-          <a href="https://discord.com" target="_blank" rel="noopener">CSE 391 Discord</a>.
-        </div>
-        <form id="contactForm">
-          <label for="name">Name</label>
-          <input type="text" id="name" required>
-          <label for="email">Email</label>
-          <input type="email" id="email" required>
-          <label for="message">Message</label>
-          <textarea id="message" rows="8" required></textarea>
-          <button type="submit"><i class="fa-solid fa-paper-plane"></i> Send</button>
-        </form>
-      </div>
-    </section>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="wrap contact-inner"><p class="eyebrow">05 / WHAT’S NEXT?</p><h2 id="contact-title">Good work starts<br>with a <em>conversation.</em></h2><p>Working on medical AI, neuroimaging, or a research-driven product?<br>I’m interested in PhD opportunities, research collaborations, and engineering roles.</p><div class="contact-actions"><a class="button primary" href="mailto:shamratneero@gmail.com">Let’s talk <span aria-hidden="true">↗</span></a><button class="copy-email" type="button">Copy email <span aria-hidden="true">⧉</span></button></div><a class="email-link" href="mailto:shamratneero@gmail.com">shamratneero@gmail.com</a><p class="copy-status" role="status" aria-live="polite"></p></div></section>
   </main>
-
-  <footer>
-    <p>© <span id="year"></span> Shamrat Neero — All rights reserved.</p>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    // Smooth scroll offset fix for sticky nav
-    const OFFSET = 70;
-    document.querySelectorAll('a[href^="#"]').forEach(link => {
-      link.addEventListener('click', e => {
-        const target = document.querySelector(link.getAttribute('href'));
-        if (target) {
-          e.preventDefault();
-          const y = target.getBoundingClientRect().top + window.scrollY - OFFSET;
-          window.scrollTo({ top: y, behavior: 'smooth' });
-        }
-      });
-    });
-
-    // Contact form handler
-    document.getElementById('contactForm').addEventListener('submit', e => {
-      e.preventDefault();
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const msg = document.getElementById('message').value.trim();
-      const subject = encodeURIComponent('Hello from ' + name);
-      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${msg}`);
-      window.location.href = `mailto:shamrat.neero@example.com?subject=${subject}&body=${body}`;
-    });
-  </script>
+  <footer class="wrap"><p>© <span id="year">2026</span> Shamrat Neero</p><p class="footer-note">Thoughtful research. Useful software.</p><div><a href="https://github.com/shamratneero" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://linkedin.com/in/shamratneero" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="#home" aria-label="Back to top">↑</a></div></footer>
 </body>
 </html>
